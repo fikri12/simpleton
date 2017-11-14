@@ -36,15 +36,21 @@ class Examples extends CI_Controller {
 
 			$crud->set_theme('datatables');
 			$crud->set_table('offices');
-			$crud->set_subject('Office');
+			$crud->set_subject('CashFlow');
 			$crud->required_fields('city');
-			$crud->columns('city','country','phone','addressLine1','postalCode');
+			$crud->columns('city','phone','country','addressLine1','state','postalCode');
+			$crud->display_as('city','No')
+				 ->display_as('country','Tanggal')
+				 ->display_as('phone','Keterangan')
+				 ->display_as('addressLine1','Debet')
+				 ->display_as('state','Kredit')
+				 ->display_as('postalCode','Posisi');
 
 			$output = $crud->render();
 
 			//Config Halaman
-			$output->judul_besar = 'Office';
-			$output->judul_kecil = 'Manage Office';
+			$output->judul_besar = 'Laporan ';
+			$output->judul_kecil = 'Cashflow';
 			$output->m_offices_management = TRUE;
 
 			$this->_example_output($output);
@@ -126,15 +132,15 @@ class Examples extends CI_Controller {
 			$crud = new grocery_CRUD();
 
 			$crud->set_table('products');
-			$crud->set_subject('Product');
+			$crud->set_subject('Pengajuan Biaya');
 			$crud->unset_columns('productDescription');
 			$crud->callback_column('buyPrice',array($this,'valueToEuro'));
 
 			$output = $crud->render();
 
 			//Config Halaman
-			$output->judul_besar = 'Product';
-			$output->judul_kecil = 'Manage Product';
+			$output->judul_besar = 'Pengajuan Biaya';
+			$output->judul_kecil = 'Biaya';
 			$output->m_products_management = TRUE;
 
 			$this->_example_output($output);

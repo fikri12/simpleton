@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Simpleton | Dashboard</title>
+    <title>E-Accounting | Dashboard</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -49,7 +49,7 @@
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>S</b>T</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Simpleton</b></span>
+          <span class="logo-lg"><b>E-ACCOUNTING</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -358,9 +358,9 @@
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-            <b>Version</b> 1.0.0
+            <b>Version</b> Beta-Internal
           </div>
-          <strong>Copyright &copy; 2015 <a href="http://heruprambadi.com">Heru Prambadi</a>.</strong> All rights reserved.
+          <strong>Copyright &copy; 2017 <a href="#">PT BARYON HASTA PERSADA</a>.</strong> All rights reserved.
       </footer>
 
       

@@ -30,12 +30,13 @@
                             </a>
                             <ul class="treeview-menu">
 <li <?php if(isset($m_offices_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/offices_management')?>'><i class="fa fa-circle-o"></i> <span>CashFlow</a></span></li>
-</ul>
-<!--<li <?php if(isset($m_film_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/film_management')?>'><i class="fa fa-circle-o"></i> <span>Films</a></span></li>
-<li <?php if(isset($m_multigrids)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/multigrids')?>'><i class="fa fa-circle-o"></i> <span>Multigrid [BETA]</a></span></li>
+
+<li <?php if(isset($m_film_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/film_management')?>'><i class="fa fa-circle-o"></i> <span>Daftar Hutang</a></span></li>
+<!--<li <?php if(isset($m_multigrids)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/multigrids')?>'><i class="fa fa-circle-o"></i> <span>Multigrid [BETA]</a></span></li>
 <li <?php if(isset($m_customers_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/customers_management')?>'><i class="fa fa-circle-o"></i> <span>Customers</span></a></li>
-<li <?php if(isset($m_orders_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/orders_management')?>'><i class="fa fa-circle-o"></i> <span>Orders</a></span></li>
-<li <?php if(isset($m_products_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/products_management')?>'><i class="fa fa-circle-o"></i> <span>Products</a></span></li>-->
+<li <?php if(isset($m_orders_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/orders_management')?>'><i class="fa fa-circle-o"></i> <span>Orders</a></span></li>-->
+<li <?php if(isset($m_products_management)) { ?>class = "active" <?php } ?>><a href='<?php echo site_url('main/examples/products_management')?>'><i class="fa fa-circle-o"></i> <span>Daftar Piutang</a></span></li>
+</ul>
                        <li class="treeview">
                             <a href="#">
                                 <i class="fa fa-edit"></i>

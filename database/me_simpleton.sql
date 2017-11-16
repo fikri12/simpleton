@@ -10,10 +10,27 @@ Target Server Type    : MYSQL
 Target Server Version : 100128
 File Encoding         : 65001
 
-Date: 2017-11-16 13:54:55
+Date: 2017-11-16 21:38:33
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for mposisikas
+-- ----------------------------
+DROP TABLE IF EXISTS `mposisikas`;
+CREATE TABLE `mposisikas` (
+  `no` varchar(15) NOT NULL,
+  `tanggal` date DEFAULT NULL,
+  `nominal` double DEFAULT NULL,
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of mposisikas
+-- ----------------------------
+INSERT INTO `mposisikas` VALUES ('PK171116001', '2017-11-16', '1000000');
+INSERT INTO `mposisikas` VALUES ('PK171116002', '2017-11-16', '500000');
 
 -- ----------------------------
 -- Table structure for mproyek
@@ -38,6 +55,7 @@ INSERT INTO `mproyek` VALUES ('P001', 'Akunting', '1', 'S001', '1000000', 'Proje
 INSERT INTO `mproyek` VALUES ('P002', 'Inventory', '1', 'S001', '5000000', 'Projek Inventory', '0', '1');
 INSERT INTO `mproyek` VALUES ('P003', 'Akunting', '2', 'S002', '200000', 'Projek Akunting', '0', '1');
 INSERT INTO `mproyek` VALUES ('S001', 'Company Profile', '1', 'S002', '10000000', 'bikin web', '0', '1');
+INSERT INTO `mproyek` VALUES ('S002', 'Queue', 'P', 'S002', '5000', '-', '0', '1');
 
 -- ----------------------------
 -- Table structure for mrekanan
@@ -86,17 +104,10 @@ CREATE TABLE `tcashflow` (
 -- ----------------------------
 -- Records of tcashflow
 -- ----------------------------
-INSERT INTO `tcashflow` VALUES ('CF171115001', '2017-11-15', '10000', '0', '10000', 'Ket', '0');
-INSERT INTO `tcashflow` VALUES ('CF171115002', '2017-11-15', '0', '10000', '10000', '-', '0');
-INSERT INTO `tcashflow` VALUES ('CF20171115001', '2017-11-15', '10000', '0', '1000', '-', '0');
-INSERT INTO `tcashflow` VALUES ('CF20171115002', '2017-11-15', '5000', '0', '5000', 'Ket', '1');
-INSERT INTO `tcashflow` VALUES ('CF20171115003', '2017-11-15', '1000', '0', '1000', '-', '1');
-INSERT INTO `tcashflow` VALUES ('CF20171115004', '2017-11-15', '2000', '0', '2000', '-', '1');
-INSERT INTO `tcashflow` VALUES ('CF20171115005', '2017-11-15', '0', '0', '0', '', '1');
-INSERT INTO `tcashflow` VALUES ('CF20171115006', '2017-11-15', '0', '0', '0', '-', '1');
-INSERT INTO `tcashflow` VALUES ('CF20171115007', '2017-11-15', '70000', '0', '70000', '-', '1');
-INSERT INTO `tcashflow` VALUES ('CF20171115008', '2017-11-15', '7000', '0', '7000', '-', '1');
-INSERT INTO `tcashflow` VALUES ('CF20171115009', '2017-11-15', '0', '0', '0', '', '1');
+INSERT INTO `tcashflow` VALUES ('CF171116001', '2017-11-16', '1000000', '0', '1000000', 'Tambah Saldo Posisi', '1');
+INSERT INTO `tcashflow` VALUES ('CF171116002', '2017-11-16', '500000', '0', '1500000', 'Tambah Saldo Posisi', '1');
+INSERT INTO `tcashflow` VALUES ('CF171116003', '2017-11-16', '0', '10000', '2990000', 'beli 10 kopi', '1');
+INSERT INTO `tcashflow` VALUES ('CF171116004', '2017-11-16', '0', '20000', '2970000', 'beli 10 mie instan', '1');
 
 -- ----------------------------
 -- Table structure for tpiutang
@@ -153,6 +164,7 @@ INSERT INTO `tutang` VALUES ('U171115003', '2017-11-15', 'P002', '5', '1000000',
 DROP TABLE IF EXISTS `xuser`;
 CREATE TABLE `xuser` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(60) DEFAULT NULL,
   `username` varchar(32) DEFAULT NULL,
   `password` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -161,8 +173,8 @@ CREATE TABLE `xuser` (
 -- ----------------------------
 -- Records of xuser
 -- ----------------------------
-INSERT INTO `xuser` VALUES ('1', 'admin', '21232f297a57a5a743894a0e4a801fc3');
-INSERT INTO `xuser` VALUES ('2', 'user', 'ee11cbb19052e40b07aac0ca060c23ee');
+INSERT INTO `xuser` VALUES ('1', 'Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3');
+INSERT INTO `xuser` VALUES ('2', 'User', 'user', 'ee11cbb19052e40b07aac0ca060c23ee');
 
 -- ----------------------------
 -- Table structure for xuserakses

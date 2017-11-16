@@ -1,7 +1,6 @@
 Apa itu ?
 ================
-Intern
-Untuk siapa ditujukan ?
+Under Development Ian Bandung Cimahi -- Internal
 ===================
 Intern ditujukan untuk kamu yang familiar dengan :
 * Codeigniter

@@ -27,8 +27,8 @@ class Posisikas_model extends CI_Model {
 	private function _save($nominal) {
 		$this->db->set('no', get_kode('CF'.date('ymd'),'no','tcashflow',3));
 		$this->db->set('tanggal', date('Y-m-d'));
-		$this->db->set('debet', $nominal);
-		$this->db->set('kredit', 0);
+		$this->db->set('debet', 0);
+		$this->db->set('kredit', $nominal);
 		$this->db->set('posisi', $this->_mx_posisicashflow()+$nominal);
 		$this->db->set('keterangan', 'Tambah Saldo Posisi');
 		return $this->db->insert('tcashflow');

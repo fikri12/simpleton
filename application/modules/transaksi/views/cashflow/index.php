@@ -14,10 +14,10 @@
 							<tr> 
 								<th>No</th> 
 								<th>Tanggal</th> 
+								<th>Keterangan</th> 
 								<th>Debet</th> 
 								<th>Kredit</th> 
 								<th>Posisi</th> 
-								<th>Option</th> 
 							</tr> 
 						</thead> 
 						<tbody></tbody> 
@@ -36,23 +36,21 @@
 	        pageLength: 50,  
 	        serverSide: true,
 	        autoWidth: false,
-	        order: [ [0,'asc'] ],
+	        order: [ [0,'desc'] ],
 	        ajax: { url: '{site_url}/transaksi/cashflow/ajax_list', type: 'POST' },
 	        columns: [
 	            {"data": "no", "className": "detail text-center", "width": "10%"},
 	            {"data": "tanggal"},
-	            {"data": "debet"},
+	            {"data": "keterangan"},
+	            {"data": "debet", "className": "number"},
 	            {"data": "kredit"},
-	            {"data": "posisi"},
-	            {"data": "keterangan", "width": "15%", "className": "text-center"}
+	            {"data": "posisi"}
 	        ],
 	        "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
 	        	$("td:eq(0)", nRow).html('<button class="btn btn-default btn-xs">'+aData['no']+'</button>');
-
-	        	var option = '';
-	        	option += '<a class="btn btn-success btn-xs" href="{site_url}/transaksi/cashflow/edit/'+aData['no']+'"><i class="fa fa-pencil"></i> Edit</a>&nbsp;&nbsp;';
-	        	option += '<a class="btn btn-danger btn-xs" href="{site_url}/transaksi/cashflow/delete/'+aData['no']+'" onclick="return confirm(\'{deleteconfirmmsg}\')"><i class="fa fa-trash-o"></i> Delete</a>';
-	        	$("td:eq(5)", nRow).html(option);
+	        	$("td:eq(3)", nRow).html(number(aData['debet']));
+	        	$("td:eq(4)", nRow).html(number(aData['kredit']));
+	        	$("td:eq(5)", nRow).html(number(aData['posisi']));
 	            return nRow;
 	        }
 	    })

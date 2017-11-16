@@ -15,7 +15,7 @@ class Proyek_model extends CI_Model {
 		$this->db->set('nama', $this->input->post('nama'));
 		$this->db->set('tipe', $this->input->post('tipe'));
 		$this->db->set('rekanan', $this->input->post('rekanan'));
-		$this->db->set('nominal', $this->input->post('nominal'));
+		$this->db->set('nominal', remove_comma($this->input->post('nominal')));
 		$this->db->set('keterangan', $this->input->post('keterangan'));
 		$this->db->set('stlunas', 0);
 		return $this->db->insert('mproyek');
@@ -26,7 +26,7 @@ class Proyek_model extends CI_Model {
 		$this->db->set('nama', $this->input->post('nama'));
 		$this->db->set('tipe', $this->input->post('tipe'));
 		$this->db->set('rekanan', $this->input->post('rekanan'));
-		$this->db->set('nominal', $this->input->post('nominal'));
+		$this->db->set('nominal', remove_comma($this->input->post('nominal')));
 		$this->db->set('keterangan', $this->input->post('keterangan'));
 		$this->db->where('no', $this->input->post('id'));
 		return $this->db->update('mproyek');

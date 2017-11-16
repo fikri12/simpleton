@@ -144,9 +144,9 @@ class Piutang extends Admin {
     // additional
     public function total_saldo($noproyek) {
         $row = $this->model->total_saldo($noproyek);
-        $data['piutang']      	= $row->piutang;
-        $data['sisapiutang']  	= $row->sisapiutang;
-        $data['terbayar']   	= $row->terbayar;
+        $data['piutang']      	= number_format($row->piutang);
+        $data['sisapiutang']  	= number_format($row->sisapiutang);
+        $data['terbayar']   	= number_format($row->terbayar);
         $data['progres']    	= $row->progres;
         $this->output->set_output(json_encode($data));
     }

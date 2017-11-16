@@ -18,8 +18,7 @@
 								<th>Progres</th> 
 								<th>Dibayar</th> 
 								<th>Terbayar</th> 
-								<th>Sisa Piutang</th> 
-								<th>Option</th> 
+								<th>Sisa Piutang</th>
 							</tr> 
 						</thead> 
 						<tbody></tbody> 
@@ -48,14 +47,12 @@
 	            {"data": "dibayar"},
 	            {"data": "terbayar"},
 	            {"data": "sisapiutang"},
-	            {"data": "keterangan", "width": "10%", "className": "text-center"}
 	        ],
 	        "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
 	        	$("td:eq(0)", nRow).html('<button class="btn btn-default btn-xs">'+aData['no']+'</button>');
-
-	        	var option = '';
-	        	option += '<a class="btn btn-default btn-xs" href="{site_url}/transaksi/piutang/edit/'+aData['no']+'"><i class="fa fa-eye"></i> View</a>&nbsp;&nbsp;';
-	        	$("td:eq(7)", nRow).html(option);
+	        	$("td:eq(4)", nRow).html(number(aData['dibayar']));
+	        	$("td:eq(5)", nRow).html(number(aData['terbayar']));
+	        	$("td:eq(6)", nRow).html(number(aData['sisapiutang']));
 	        	$("td:eq(3)", nRow).html(aData['progres']+'%');
 	            return nRow;
 	        }

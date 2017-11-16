@@ -50,6 +50,7 @@
 	        ],
 	        "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
 	        	$("td:eq(0)", nRow).html('<button class="btn btn-default btn-xs">'+aData['no']+'</button>');
+	        	$("td:eq(4)", nRow).html(number(aData['nominal']));
 	        	if(aData['tipe'] == 1) {
 	        		$("td:eq(2)", nRow).html('<button disabled class="btn btn-danger btn-xs">Utang</button>')
 	        	} else {

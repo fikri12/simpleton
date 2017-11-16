@@ -50,7 +50,7 @@
 				<div class="col-sm-6">
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-edit"></i></div>
-						<input type="text" name="nominal" class="form-control" id="nominal" value="{nominal}">
+						<input type="text" name="nominal" class="form-control number" id="nominal" value="{nominal}">
 					</div>
 				</div>
 			</div>

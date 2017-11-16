@@ -69,7 +69,7 @@ class Proyek extends Admin {
                         'tipe'              => $row->tipe,
 		                'nama'              => $row->nama,
 		                'rekanan'           => $row->rekanan,
-		                'nominal'           => $row->nominal,
+		                'nominal'           => number_format($row->nominal),
 		                'keterangan'        => $row->keterangan,
                         );
                 $data['error']          = '';

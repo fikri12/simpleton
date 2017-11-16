@@ -25,6 +25,9 @@
 					<li class=" <?= ($uri_2 == 'proyek') ? 'active' : '' ?> ">
 						<a href="{site_url}/master/proyek"><i class="fa fa-edit"></i> Proyek</a>
 					</li>
+					<li class=" <?= ($uri_2 == 'posisikas') ? 'active' : '' ?> ">
+						<a href="{site_url}/master/posisikas"><i class="fa fa-edit"></i> Posisi Kas</a>
+					</li>
 				</ul> 
 			</li>
 			<li class="treeview <?= ($uri_1 == 'transaksi') ? 'active' : '' ?> "> 

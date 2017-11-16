@@ -149,6 +149,21 @@
             <div class="control-sidebar-bg"></div>
     </div>
 
-</body>
 
+<script type="text/javascript">
+    function number(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }    
+
+    $('input.number').keyup(function(event) {
+        if(event.which >= 37 && event.which <= 40) return; 
+        // format number 
+        $(this).val(function(index, value) {
+            return value 
+            .replace(/\D/g, "") 
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
+        }); 
+    });
+</script>
+</body>
 </html>      

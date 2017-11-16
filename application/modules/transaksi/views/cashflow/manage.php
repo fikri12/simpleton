@@ -74,7 +74,7 @@
 </form>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$.getJSON('{site_url}/transaksi/cashflow/sum_posisikas', function(data){
+		$.getJSON('{site_url}/transaksi/cashflow/max_posisicashflow', function(data){
 			$('#saldoposisi').val(data)
 		})
 	})

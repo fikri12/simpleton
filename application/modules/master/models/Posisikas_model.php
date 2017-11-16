@@ -11,7 +11,8 @@
 class Posisikas_model extends CI_Model {
 
 	public function save() {
-		$this->db->set('no', get_kode('PK'.date('ymd'),'no','mposisikas',3));
+		$no = get_kode('PK'.date('ymd'),'no','mposisikas',3);
+		$this->db->set('no', $no);
 		$this->db->set('tanggal', $this->input->post('tanggal'));
 		$this->db->set('nominal', remove_comma($this->input->post('nominal')));
 		$insert = $this->db->insert('mposisikas');
@@ -28,16 +29,15 @@ class Posisikas_model extends CI_Model {
 		$this->db->set('tanggal', date('Y-m-d'));
 		$this->db->set('debet', $nominal);
 		$this->db->set('kredit', 0);
-		$this->db->set('posisi', $this->_sum_posisicashflow()+$nominal);
+		$this->db->set('posisi', $this->_mx_posisicashflow()+$nominal);
 		$this->db->set('keterangan', 'Tambah Saldo Posisi');
 		return $this->db->insert('tcashflow');
 	}
 
-	private function _sum_posisicashflow() {
-		$this->db->select_sum('debet','debet');
-		$this->db->select_sum('kredit','kredit');
+	private function _mx_posisicashflow() {
+		$this->db->select_max('posisi','posisi');
 		$row = $this->db->get('tcashflow')->row();	
-		return ($row->debet-$row->kredit);
+		return ($row->posisi);
 	}
 
 }

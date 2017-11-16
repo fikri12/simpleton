@@ -25,6 +25,12 @@ class Cashflow_model extends CI_Model {
 		return $this->db->get_where('tcashflow', array('no' => $id) )->row();
 	}
 
+	public function max_posisicashflow() {
+		$this->db->select_max('posisi','posisi');
+		$row = $this->db->get('tcashflow')->row();	
+		return ($row->posisi);
+	}
+
 	public function sum_posisikas() {
 		$this->db->select_sum('nominal','nominal');
 		return $this->db->get('mposisikas')->row()->nominal;

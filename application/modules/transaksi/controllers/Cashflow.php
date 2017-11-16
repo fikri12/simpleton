@@ -106,6 +106,11 @@ class Cashflow extends Admin {
 
     // additional
 
+    public function max_posisicashflow() {
+        $query = $this->model->max_posisicashflow();
+        $this->output->set_output($query);
+    }
+
     public function sum_posisikas() {
         $query = $this->model->sum_posisikas();
         $this->output->set_output($query+$this->sum_posisicashflow());

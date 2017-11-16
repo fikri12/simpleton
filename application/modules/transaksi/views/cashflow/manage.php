@@ -88,9 +88,5 @@
 		} else {
 			$('#posisi').val(number(saldoposisi+abs))			
 		}
-		// if(debet < kredit) {
-		// } else {
-		// 	$('#posisi').val(number(saldoposisi+abs))			
-		// }
 	})
 </script>

@@ -83,10 +83,14 @@
 		var kredit = parseFloat($('#kredit').val().replace(/,/g, ''))
 		var saldoposisi = parseFloat($('#saldoposisi').val().replace(/,/g, ''))
 		var abs = Math.abs(debet-kredit)
-		if(debet < kredit) {
-			$('#posisi').val(number(saldoposisi+abs))
+		if(debet > kredit) {
+			$('#posisi').val(number(saldoposisi-abs))
 		} else {
-			$('#posisi').val(number(saldoposisi-abs))			
+			$('#posisi').val(number(saldoposisi+abs))			
 		}
+		// if(debet < kredit) {
+		// } else {
+		// 	$('#posisi').val(number(saldoposisi+abs))			
+		// }
 	})
 </script>

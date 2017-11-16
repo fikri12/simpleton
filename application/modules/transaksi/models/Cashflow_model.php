@@ -11,7 +11,7 @@
 class Cashflow_model extends CI_Model {
 
 	public function save() {
-		$this->db->set('no', get_kode('CF'.date('Ymd'),'no','tcashflow',3));
+		$this->db->set('no', get_kode('CF'.date('ymd'),'no','tcashflow',3));
 		$this->db->set('tanggal', $this->input->post('tanggal'));
 		$this->db->set('debet', $this->input->post('debet'));
 		$this->db->set('kredit', $this->input->post('kredit'));

@@ -66,7 +66,8 @@ class Proyek extends Admin {
                 $data = array(
                         'id'                => $row->no,
 		                'no'               	=> $row->no,
-		                'tipe'              => $row->tipe,
+                        'tipe'              => $row->tipe,
+		                'nama'              => $row->nama,
 		                'rekanan'           => $row->rekanan,
 		                'nominal'           => $row->nominal,
 		                'keterangan'        => $row->keterangan,

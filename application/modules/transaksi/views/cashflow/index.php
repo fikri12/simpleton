@@ -36,7 +36,7 @@
 	        pageLength: 50,  
 	        serverSide: true,
 	        autoWidth: false,
-	        order: [ [0,'desc'] ],
+	        order: [ [0,'asc'] ],
 	        ajax: { url: '{site_url}/transaksi/cashflow/ajax_list', type: 'POST' },
 	        columns: [
 	            {"data": "no", "className": "detail text-center", "width": "10%"},

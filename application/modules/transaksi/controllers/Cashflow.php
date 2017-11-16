@@ -40,7 +40,7 @@ class Cashflow extends Admin {
     public function create(){
         $data = array(
                 'id'                	=> '',
-                'no'               		=> get_kode('CF'.date('Ymd'),'no','tcashflow',3),
+                'no'               		=> get_kode('CF'.date('ymd'),'no','tcashflow',3),
                 'tanggal'               => date("Y-m-d"),
                 'debet'                 => 0,
                 'kredit'                => 0,

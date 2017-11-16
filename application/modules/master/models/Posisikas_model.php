@@ -35,7 +35,9 @@ class Posisikas_model extends CI_Model {
 	}
 
 	private function _mx_posisicashflow() {
-		$this->db->select_max('posisi','posisi');
+		$this->db->select('posisi');
+		$this->db->order_by('no', 'desc');
+		$this->db->limit(1);
 		$row = $this->db->get('tcashflow')->row();	
 		return ($row->posisi);
 	}

@@ -19,6 +19,7 @@ class Auth_model extends CI_Model {
 				'userid' 			=> $user->id,
 				'username' 			=> $user->username,
 				'password' 			=> $user->password,
+				'nama' 				=> $user->nama,
 			);
 			
 			$this->session->set_userdata( $array );

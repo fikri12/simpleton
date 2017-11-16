@@ -7,7 +7,7 @@
 				<img src="{adminlte}dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> 
 			</div> 
 			<div class="pull-left info"> 
-				<p>Iyan Isyanto</p> 
+				<p>{usernama}</p> 
 				<a href="#"><i class="fa fa-circle text-warning"></i> Online</a> 
 			</div> 
 		</div>

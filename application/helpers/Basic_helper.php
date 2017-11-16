@@ -13,6 +13,8 @@ function backend_info() {
 		'deleteconfirmmsg'				=> 'Apakah anda yakin ingin menghapus data?',
 		'notfoundmsg'					=> 'data tidak ditemukan.',
 		'leavepagemsg'					=> 'Apakah anda yakin ingin berpindah halaman ?\nData yang sudah diinputkan akan dibatalkan.',
+		'usernama'						=> $CI->session->userdata('nama'),
+		'userid'						=> $CI->session->userdata('userid'),
 	);
 	return $data;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{title}</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="{adminlte}dist/img/favicon.ico">
     <link rel="stylesheet" href="{adminlte}bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -53,7 +54,8 @@
             <!-- Logo -->
             <a href="../../index2.html" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>A</b>LT</span>
+                <!--<img class="logo-mini" src="{adminlte}dist/img/BHP Logo.png"/>-->
+                <span class="logo-mini"><b>B</b>HP</span>
                 <!-- logo for regular state and mobile devices -->
                 <img src="{adminlte}dist/img/editbhp.png"/>
             </a>
@@ -142,9 +144,9 @@
 
             <footer class="main-footer">
                 <div class="pull-right hidden-xs">
-                    <b>Version</b> 2.3.0
+                    <b>Version</b> Beta-Internal
                 </div>
-                <strong>Copyright &copy; 2017 <a href="#">Almsaeed Studio</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2017 <a href="#"></a></strong> All rights reserved.
             </footer>
             <div class="control-sidebar-bg"></div>
     </div>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{title}</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="{adminlte}dist/img/favicon.ico">
     <link rel="stylesheet" href="{adminlte}bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{adminlte}dist/css/AdminLTE.min.css">
@@ -13,10 +14,8 @@
 
 <body class="hold-transition login-page">
     <div class="login-box">
-            <div class="login-logo">
-            <img src="{adminlte}dist/img/editbhp.png"/></div>
         <div class="login-logo">
-            <a href="#"><b>E -</b>Accounting</a></div>
+            <img src="{adminlte}dist/img/editbhp.png"/></div>
         <? if($this->session->flashdata('error_login')): ?>
             <?= $this->session->flashdata('error_login') ?>
         <? endif ?>

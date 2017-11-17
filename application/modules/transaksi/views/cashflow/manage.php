@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="debet" class="col-sm-3 control-label">Debet</label>
+				<label for="debet" class="col-sm-3 control-label">Cash OUT</label>
 				<div class="col-sm-6">
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-edit"></i></div>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="kredit" class="col-sm-3 control-label">Kredit</label>
+				<label for="kredit" class="col-sm-3 control-label">Cash IN</label>
 				<div class="col-sm-6">
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-edit"></i></div>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="posisi" class="col-sm-3 control-label">Posisi</label>
+				<label for="posisi" class="col-sm-3 control-label">Cash Position</label>
 				<div class="col-sm-6">
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-lock"></i></div>

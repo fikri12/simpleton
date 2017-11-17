@@ -15,9 +15,9 @@
 								<th>No</th> 
 								<th>Tanggal</th> 
 								<th>Keterangan</th> 
-								<th>Debet</th> 
-								<th>Kredit</th> 
-								<th>Posisi</th> 
+								<th>Cash OUT</th> 
+								<th>Cash IN</th> 
+								<th>Cash Position</th> 
 							</tr> 
 						</thead> 
 						<tbody></tbody> 

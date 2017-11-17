@@ -14,7 +14,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="#"><b>Admin</b>LTE</a>
+            <a href="#"><b>E -</b>Accounting</a>
         </div>
         <? if($this->session->flashdata('error_login')): ?>
             <?= $this->session->flashdata('error_login') ?>

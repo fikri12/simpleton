@@ -13,9 +13,10 @@
 
 <body class="hold-transition login-page">
     <div class="login-box">
+            <div class="login-logo">
+            <img src="{adminlte}dist/img/editbhp.png"/></div>
         <div class="login-logo">
-            <a href="#"><b>E -</b>Accounting</a>
-        </div>
+            <a href="#"><b>E -</b>Accounting</a></div>
         <? if($this->session->flashdata('error_login')): ?>
             <?= $this->session->flashdata('error_login') ?>
         <? endif ?>

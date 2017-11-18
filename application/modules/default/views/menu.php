@@ -16,7 +16,7 @@
 			<li><a href="{site_url}/dashboard"><i class="fa fa-dashboard text-yellow"></i> <span>Dashboard</span></a></li> 
 			<li class="treeview <?= ($uri_1 == 'master') ? 'active' : '' ?> "> 
 				<a href="#"> 
-					<i class="fa fa-money text-yellow"></i><span>Master Data</span> <i class="fa fa-angle-left pull-right text-yellow"></i> 
+					<i class="fa fa-money text-yellow"></i><span> Master Data</span> <i class="fa fa-angle-left pull-right text-yellow"></i> 
 				</a> 
 				<ul class="treeview-menu"> 
 					<li class=" <?= ($uri_2 == 'rekanan') ? 'active' : '' ?> ">
@@ -32,7 +32,7 @@
 			</li>
 			<li class="treeview <?= ($uri_1 == 'transaksi') ? 'active' : '' ?> "> 
 				<a href="#"> 
-					<i class="fa fa-money text-yellow"></i> <span>Transaksi</span> <i class="fa fa-angle-left pull-right text-yellow"></i> 
+					<i class="fa fa-money text-yellow"></i> <span> Transaksi</span> <i class="fa fa-angle-left pull-right text-yellow"></i> 
 				</a> 
 				<ul class="treeview-menu"> 
 					<li class="<?= ($uri_2 == 'cashflow') ? 'active' : '' ?> ">

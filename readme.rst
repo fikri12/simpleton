@@ -1,6 +1,6 @@
 Apa itu ?
 ================
-grocery crud--contoh  assa
+grocery crud--
 ===================
 Intern ditujukan untuk kamu yang familiar dengan :
 * Codeigniter
